@@ -16,5 +16,5 @@
 # Deployment
   We have successfully deployed our project on Amazon EC2 cloud service.
   Here is the link: http://ec2-3-108-54-156.ap-south-1.compute.amazonaws.com/Walkover-Project/
-  Here is the link of github page: https://devito10.github.io/Walkover-Project/
+  Here is the link of github page: https://brijesh-rai.github.io/Online-assessment-platform/
 
