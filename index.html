@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Test</title>
+    <link rel="icon" href="exam.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="myjs.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <!--top header-->
+        <div class="row header no-gutters">
+            <div class="col-md-12 heading">
+                <img src="exam.png" alt="Logo">
+                Assessment Test
+                <span><span id="rem">Remaining time : </span><span id="timer">00:00:00</span></span>
+            </div>
+        </div>
+        <!--content/questions-->
+        <div class="content no-gutters">
+            <!--Login Credentials-->
+            <div class="candidate-credentials" id="candidate-credentials">
+                <span style="color:red;font-size:x-large;">Candidate Credentials</span>
+                <span style="font-size:small">Use full name and reputable email providers</span>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+                <input type="email" id="email" placeholder="Enter valid E-Maild Id" required>
+                <input type="button" id="submit-cred" value="Submit" onclick="submitCredentials()" disabled style="cursor: no-drop;">
+            </div>
+
+            <!--Instructions-->
+            <div class="instruction no-gutters" id="instruction" style="display: none;">
+                <!--Rules-->
+                <div>
+                    <b><u>Instructions :</u></b>
+                    <ol>
+                        <li>The Assessment is of <b>10 minutes</b> in total, and consist of <b>10 questions</b>.</li>
+                        <li>All questions are compulsory.</li>
+                        <li>If you fail to Submit your test within 10 minutes, it will get auto submitted.</li>
+                        <li>Remaining time is shown at the top right corner.</li>
+                    </ol>
+                </div>
+                <!--Accept Butoon-->
+                <input type="button" value="Accept & Continue" onclick="acceptInstruction()">
+            </div>
+
+            <!--Questions-->
+            <div class="question no-gutters" id="question" style="display: none;">
+                <div id="question-set" style=""></div>
+            </div>
+
+            <!--Final Result-->
+            <div class="final-result" id="final-result" style="display: none">
+
+            </div>
+        </div>
+        <!--footer-->
+        <div class="row footer no-gutters">
+            <div class="col-md-6 col-sm-6 col-6 date"><span id="date"></span></div>
+            <div class="col-md-6 col-sm-6 col-6 time"><span id="time"></span></div>
+        </div>
+    </div>
+    <span id="credits" style="margin-top:auto;color:red;">Walkover Project by Debankan (debankan2014@gmail.com), Brijesh (raibrijesh45@gmail.com) and Keshav (keshav6240@gmail.com)</span>
+</body>
+</html>
